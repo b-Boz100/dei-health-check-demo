@@ -1,0 +1,257 @@
+{
+  "id": "dei-health-check",
+  "quizName": "DEI Health Check",
+  "brand": {
+    "name": "CoAct Connect",
+    "logoUrl": "assets/coact-connect-logo.png",
+    "footerLogoUrl": "assets/coact-logo.png",
+    "footerLogoAlt": "CoAct",
+    "primaryColor": "#45c2bf"
+  },
+  "landing": {
+    "headline": "How inclusive is your business?",
+    "subheading": "Take our 2-minute Diversity, Equity and Inclusion (DEI) Health Check to discover how your organisation stacks up.",
+    "startButtonLabel": "Take the DEI Health Check",
+    "secondaryButtonLabel": "Take the DEI Health Check",
+    "heroImageUrl": "assets/hero-illustration.png",
+    "howItWorks": {
+      "heading": "How it works",
+      "intro": "Answer 8 quick-fire questions to reveal your organisation's Diversity, Equity, and Inclusion Health Score:",
+      "steps": [
+        "Answer questions about your current practices",
+        "Receive your DEI Health Score instantly",
+        "Get practical next steps tailored to your organisation"
+      ],
+      "imageUrl": "assets/how-it-works-illustration.png"
+    },
+    "keyAreasHeading": "You’ll be scored based on the following 4 key areas:",
+    "keyAreas": [
+      {
+        "name": "Inclusive Hiring and Recruitment",
+        "description": "How accessible, equitable, and inclusive your hiring processes are, including how well you reach and attract talent from diverse backgrounds.",
+        "iconUrl": "assets/icon-hiring.png"
+      },
+      {
+        "name": "Workplace Culture and Inclusion",
+        "description": "How well your organisation fosters a sense of belonging, respect, fairness and genuine inclusion for all staff.",
+        "iconUrl": "assets/icon-culture.png"
+      },
+      {
+        "name": "Policies, Systems and Practices",
+        "description": "The systems, processes, and initiatives in place to promote and sustain diversity, equity, and inclusion in everyday business operations.",
+        "iconUrl": "assets/icon-policy.png"
+      },
+      {
+        "name": "Staff Capability and Training",
+        "description": "How confident and equipped your staff are to engage with diversity and inclusion through training, awareness and everyday practice.",
+        "iconUrl": "assets/icon-training.png"
+      }
+    ]
+  },
+  "about": "CoAct Connect partners with employers to build stronger, more diverse teams through inclusive hiring practices. As a leading national network of not-for-profit employment service providers, we specialise in connecting you with talented individuals, including those with disabilities, to foster a more inclusive and dynamic workforce. Our expertise and local connections ensure you get the support you need to hire and retain the best people for your business.",
+  "categories": [
+    {
+      "id": "hiring",
+      "name": "Inclusive Hiring & Recruitment"
+    },
+    {
+      "id": "culture",
+      "name": "Workplace Culture & Belonging"
+    },
+    {
+      "id": "policy",
+      "name": "Policy & Practice Foundations"
+    },
+    {
+      "id": "training",
+      "name": "Staff Capability & Training"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "categoryId": "hiring",
+      "text": "We actively recruit people from diverse backgrounds in our organisation."
+    },
+    {
+      "id": "q2",
+      "categoryId": "hiring",
+      "text": "Our recruitment processes are accessible and inclusive for people of all backgrounds, including those from historically marginalised groups."
+    },
+    {
+      "id": "q3",
+      "categoryId": "training",
+      "text": "Our staff have received diversity, equity, and inclusion training, including cultural awareness and unconscious bias training."
+    },
+    {
+      "id": "q4",
+      "categoryId": "policy",
+      "text": "We are confident making reasonable adjustments or accommodations to support employees' diverse needs."
+    },
+    {
+      "id": "q5",
+      "categoryId": "policy",
+      "text": "We have a clear policy that supports diversity, equity, and inclusion in the workplace."
+    },
+    {
+      "id": "q6",
+      "categoryId": "hiring",
+      "text": "We engage with community groups or employment services to attract candidates from diverse backgrounds."
+    },
+    {
+      "id": "q7",
+      "categoryId": "culture",
+      "text": "We regularly seek feedback from staff about their experience of inclusion and belonging at work."
+    },
+    {
+      "id": "q8",
+      "categoryId": "culture",
+      "text": "We promote a culture of inclusion where all employees feel valued, respected, and able to contribute fully."
+    }
+  ],
+  "bands": [
+    {
+      "id": "low",
+      "minScore": 0,
+      "maxScore": 44
+    },
+    {
+      "id": "medium",
+      "minScore": 45,
+      "maxScore": 74
+    },
+    {
+      "id": "high",
+      "minScore": 75,
+      "maxScore": 100
+    }
+  ],
+  "results": {
+    "overall": {
+      "low": {
+        "headline": "You're just getting started on your DEI journey.",
+        "body": "Your score suggests there are significant opportunities to build a more inclusive and equitable workplace. The good news? You've taken the first step by assessing where you stand."
+      },
+      "medium": {
+        "headline": "You're on the right track.",
+        "body": "Your business is demonstrating a commitment to DEI, and it shows in some of your practices. There are still a few areas that could be strengthened to build greater consistency, especially as your team grows or hiring needs change."
+      },
+      "high": {
+        "headline": "Congratulations — you're on your way to being a Diversity Champion!",
+        "body": "You've clearly embedded inclusive practices across your organisation. Your leadership, policies and culture reflect a genuine commitment to creating a safe and equitable workplace."
+      }
+    },
+    "categories": {
+      "hiring": {
+        "low": {
+          "description": "You may not be reaching diverse talent effectively. Consider reviewing your job ads for inclusive language and expanding your sourcing beyond traditional channels.",
+          "helpBullets": [
+            "Connect with inclusive employment services (Workforce Australia & IEA)",
+            "Access diverse candidates, with support for onboarding and adjustments",
+            "Review and rewrite your job ads for inclusiveness"
+          ]
+        },
+        "medium": {
+          "description": "You've started to build inclusive recruitment practices, but they may not be applied consistently or intentionally.",
+          "helpBullets": [
+            "Formalise outreach partnerships with community networks",
+            "Create inclusive hiring guides or checklists",
+            "Offer role-matching support for job-ready candidates"
+          ]
+        },
+        "high": {
+          "description": "You're actively working to remove bias from your hiring process and reach underrepresented candidates.",
+          "helpBullets": [
+            "Showcase your brand as a 'Diversity Champion'",
+            "Streamline hiring from our job-ready candidate pool",
+            "Provide disability confident training for hiring managers"
+          ]
+        }
+      },
+      "culture": {
+        "low": {
+          "description": "You may not yet have structures to listen to or support the lived experiences of diverse staff.",
+          "helpBullets": [
+            "Access inclusion-focused training",
+            "Provide surveying tools to collect staff feedback",
+            "Share best practices for inclusive team communication"
+          ]
+        },
+        "medium": {
+          "description": "You're creating a respectful workplace, but deeper inclusion efforts may be informal or inconsistent.",
+          "helpBullets": [
+            "Access training to help build culture of psychological safety and belonging",
+            "Provide advice for inclusive onboarding and team norms"
+          ]
+        },
+        "high": {
+          "description": "You've embedded belonging into your workplace culture — well done!",
+          "helpBullets": [
+            "Highlight your story as a success case study",
+            "Connect you with partners to deepen impact in the community"
+          ]
+        }
+      },
+      "policy": {
+        "low": {
+          "description": "You may lack formal policies or processes to support inclusion.",
+          "helpBullets": [
+            "Provide DEI policy templates",
+            "Guide you on legal obligations and adjustment protocols",
+            "Set up simple, scalable inclusion practices"
+          ]
+        },
+        "medium": {
+          "description": "You have some good practices but may not have formalised them or reviewed them recently.",
+          "helpBullets": [
+            "Review existing policies through a DEI lens",
+            "Create simple accessibility checklists and process guides",
+            "Advise on adjustments, accommodations, and inclusive workplace standards"
+          ]
+        },
+        "high": {
+          "description": "You have solid DEI-aligned policies and confidently apply inclusive practices.",
+          "helpBullets": [
+            "Partner with you to create more inclusive supply chains",
+            "Promote your business as a 'Diversity Champion'"
+          ]
+        }
+      },
+      "training": {
+        "low": {
+          "description": "Training may be informal or nonexistent. DEI efforts risk being misunderstood or inconsistently applied.",
+          "helpBullets": [
+            "Deliver foundational DEI training",
+            "Offer disability confidence workshops",
+            "Build DEI awareness into your team's onboarding"
+          ]
+        },
+        "medium": {
+          "description": "You've taken steps to raise awareness, but may not have consistent training across the team.",
+          "helpBullets": [
+            "Identify high-impact training areas",
+            "Deliver short sessions for busy teams",
+            "Introduce cultural awareness and inclusive leadership workshops"
+          ]
+        },
+        "high": {
+          "description": "Your team is well-equipped and confident engaging in inclusive practices.",
+          "helpBullets": [
+            "Share your success in case studies or panels",
+            "Deepen specialist training (e.g., mental health, accessibility)",
+            "Collaborate on mentoring or reverse-mentoring programs"
+          ]
+        }
+      }
+    }
+  },
+  "cta": {
+    "heading": "How can your business improve?",
+    "subheading": "Book a free deep dive into your results today!",
+    "body": "Our team of DEI experts would be delighted to walk you through your scorecard results and provide guidance on improving diversity, equity and inclusion in your organisation. To schedule your no-obligation call with our team, please book via the button below or call 1800 226 228.",
+    "phone": "1800 226 228",
+    "buttonLabel": "Book an appointment",
+    "url": "https://coact.org.au/employers/#employer-form",
+    "imageUrl": "assets/hero-illustration.png"
+  }
+}

@@ -1,0 +1,510 @@
+:root {
+  --brand-primary: #45c2bf;
+  --text-color: #404041;
+  --page-background: #f5f7f7;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+  color: var(--text-color);
+  background: var(--page-background);
+  overflow-x: hidden;
+}
+
+.site-header {
+  padding: 1rem;
+  text-align: center;
+}
+
+.brand-logo {
+  height: 96px;
+}
+
+#app {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 1rem 1.25rem 3rem;
+}
+
+.screen[hidden] {
+  display: none !important;
+}
+
+.landing-hero {
+  background: var(--brand-primary);
+  color: #fff;
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+  padding: 2.5rem 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.landing-hero-inner {
+  max-width: 720px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  text-align: left;
+}
+
+.landing-hero-text {
+  flex: 1 1 260px;
+  min-width: 0;
+}
+
+.landing-hero-text h1 {
+  margin-top: 0;
+}
+
+.landing-hero-image {
+  flex: 0 1 364px;
+  max-width: 100%;
+  height: auto;
+  min-width: 0;
+}
+
+.button-primary.button-hero {
+  background: #b2519e;
+  color: #fff;
+  margin-top: 1.5rem;
+}
+
+.landing-section {
+  margin: 2.5rem 0;
+}
+
+.landing-section h2 {
+  text-align: center;
+}
+
+.how-it-works {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 1.5rem;
+  text-align: left;
+}
+
+.how-it-works-text {
+  min-width: 0;
+}
+
+.how-it-works-text h2 {
+  text-align: left;
+}
+
+.how-it-works-image {
+  width: 100%;
+  height: auto;
+  min-width: 0;
+}
+
+.key-areas {
+  background: #ecc72b;
+  border-radius: 12px;
+  padding: 2rem 1.5rem;
+}
+
+.key-areas-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.25rem;
+  margin-top: 1.5rem;
+}
+
+.key-area-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 1.25rem;
+  text-align: center;
+}
+
+.key-area-icon {
+  width: 56px;
+  height: 56px;
+  margin-bottom: 0.75rem;
+}
+
+.key-area-card h3 {
+  margin: 0.5rem 0;
+  font-size: 1rem;
+}
+
+.key-area-card p {
+  font-size: 0.85rem;
+  color: #6b6b6c;
+}
+
+.landing-about {
+  text-align: center;
+}
+
+.button-primary {
+  display: inline-block;
+  background: var(--brand-primary);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 0.85rem 1.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+}
+
+.button-primary:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.quiz-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* Keep Next on the right when Back is hidden on question 1 */
+.quiz-nav #next-button {
+  margin-left: auto;
+}
+
+.quiz-nav #back-button[hidden] {
+  display: none;
+}
+
+.button-secondary {
+  background: #fff;
+  color: #404041;
+  border: 2px solid #404041;
+  border-radius: 8px;
+  padding: calc(0.85rem - 2px) 1.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.button-secondary:hover {
+  background: #f0f0f0;
+}
+
+.quiz-category {
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-size: 0.8rem;
+  color: #6b6b6c;
+  text-align: center;
+}
+
+#quiz-question {
+  text-align: center;
+}
+
+.quiz-options {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 0.5rem;
+  margin: 1.5rem 0;
+}
+
+.quiz-option {
+  border: 1px solid #d8d8d8;
+  border-radius: 8px;
+  padding: 0.75rem 0.5rem;
+  text-align: center;
+  font-size: 0.8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  background: #fff;
+}
+
+.quiz-option input[type='radio'] {
+  width: 20px;
+  height: 20px;
+  accent-color: var(--brand-primary);
+}
+
+.progress-track {
+  height: 6px;
+  background: #e2e2e2;
+  border-radius: 3px;
+  margin-top: 1.5rem;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background: var(--brand-primary);
+  width: 0%;
+  transition: width 0.2s ease;
+}
+
+.field-error {
+  color: #b3261e;
+  font-size: 0.85rem;
+  margin: 0;
+}
+
+.score-card {
+  background: #45c2bf;
+  color: #fff;
+  border-radius: 12px;
+  padding: 1.5rem;
+  text-align: center;
+  margin: 1.5rem 0;
+}
+
+.score-label {
+  font-size: 1.15rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  margin: 0;
+}
+
+.score-value {
+  font-size: 4.5rem;
+  font-weight: 700;
+  color: #fff;
+  margin: 0.25rem 0;
+}
+
+.score-band {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-weight: 700;
+  margin: 0;
+}
+
+.category-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 1.25rem 1.5rem;
+  margin-bottom: 1rem;
+}
+
+/* 10% tints of red, CoAct yellow and green */
+.category-card.band-low {
+  background: #fbeae9;
+}
+
+.category-card.band-medium {
+  background: #fdf9ea;
+}
+
+.category-card.band-high {
+  background: #eaf5ef;
+}
+
+.category-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 0.75rem;
+}
+
+.category-card h4 {
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+/* Score circle: white centre, ring in the band colour */
+.score-circle {
+  --ring: #45c2bf;
+  flex: 0 0 auto;
+  width: 88px;
+  height: 88px;
+  border-radius: 50%;
+  border: 7px solid var(--ring);
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  line-height: 1.1;
+}
+
+.band-low .score-circle {
+  --ring: #d93025;
+}
+
+.band-medium .score-circle {
+  --ring: #ecc72b;
+}
+
+.band-high .score-circle {
+  --ring: #2e9e5b;
+}
+
+.score-circle-value {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.score-circle-band {
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.category-description {
+  line-height: 1.55;
+  margin: 0 0 1rem;
+}
+
+.help-box {
+  background: #fff;
+  border-left: 5px solid #b2519e;
+  border-radius: 8px;
+  padding: 1rem 1.25rem;
+}
+
+.help-heading {
+  color: #b2519e;
+  font-size: 1.05rem;
+  font-weight: 700;
+  margin: 0 0 0.5rem;
+}
+
+.help-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.help-list li {
+  position: relative;
+  padding-left: 1.75rem;
+  margin: 0.4rem 0;
+  line-height: 1.45;
+}
+
+.help-list li::before {
+  content: "\2713";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 1.2rem;
+  height: 1.2rem;
+  border-radius: 50%;
+  background: #b2519e;
+  color: #fff;
+  font-size: 0.75rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cta-card {
+  background: #fff;
+  width: 100vw;
+  margin: 2rem calc(50% - 50vw);
+  padding: 3rem 1.5rem;
+}
+
+.cta-inner {
+  max-width: 880px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  align-items: center;
+  gap: 2rem;
+}
+
+.cta-text h2 {
+  font-size: 1.9rem;
+  margin: 0 0 0.5rem;
+}
+
+.cta-subheading {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #b2519e;
+  margin: 0 0 1rem;
+}
+
+.cta-text p {
+  line-height: 1.55;
+}
+
+.cta-phone {
+  color: #b2519e;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.button-primary.button-cta {
+  background: #b2519e;
+  font-size: 1.1rem;
+  font-weight: 700;
+  padding: 1rem 2rem;
+  margin-top: 0.75rem;
+}
+
+.cta-image {
+  width: 100%;
+  height: auto;
+  min-width: 0;
+}
+
+.results-footer {
+  text-align: center;
+  padding-top: 1rem;
+}
+
+.footer-logo {
+  height: 64px;
+  margin-bottom: 1rem;
+}
+
+.about-text {
+  font-size: 0.85rem;
+  color: #6b6b6c;
+  text-align: center;
+}
+
+@media (max-width: 480px) {
+  .quiz-options {
+    grid-template-columns: repeat(5, 1fr);
+    gap: 0.25rem;
+  }
+
+  .quiz-option {
+    font-size: 0.65rem;
+    padding: 0.5rem 0.25rem;
+  }
+
+  .key-areas-list {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .how-it-works,
+  .cta-inner {
+    grid-template-columns: 1fr;
+  }
+
+  .cta-text {
+    text-align: center;
+  }
+
+  .cta-image {
+    max-width: 320px;
+    margin: 0 auto;
+  }
+}

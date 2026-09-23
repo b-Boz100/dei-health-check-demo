@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="robots" content="noindex, nofollow" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>DEI Health Check</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <img id="brand-logo" class="brand-logo" alt="" />
+  </header>
+
+  <main id="app">
+    <section id="screen-landing" class="screen" hidden>
+      <div class="landing-hero">
+        <div class="landing-hero-inner">
+          <div class="landing-hero-text">
+            <h1 id="landing-headline"></h1>
+            <p id="landing-subheading"></p>
+            <button id="start-button" class="button-primary button-hero start-quiz-button" type="button"></button>
+          </div>
+          <img id="landing-hero-image" class="landing-hero-image" alt="" />
+        </div>
+      </div>
+
+      <section class="landing-section how-it-works">
+        <div class="how-it-works-text">
+          <h2 id="how-it-works-heading"></h2>
+          <p id="how-it-works-intro"></p>
+          <ol id="how-it-works-steps"></ol>
+        </div>
+        <img id="how-it-works-image" class="how-it-works-image" alt="" />
+      </section>
+
+      <section class="landing-section key-areas">
+        <h2 id="key-areas-heading"></h2>
+        <div id="key-areas-list" class="key-areas-list"></div>
+      </section>
+
+      <section class="landing-section landing-about">
+        <h2>About CoAct Connect</h2>
+        <p id="landing-about-text"></p>
+        <button id="start-button-secondary-2" class="button-primary start-quiz-button" type="button"></button>
+      </section>
+    </section>
+
+    <section id="screen-quiz" class="screen" hidden>
+      <p id="quiz-category" class="quiz-category"></p>
+      <h2 id="quiz-question"></h2>
+      <div id="quiz-options" class="quiz-options" role="radiogroup"></div>
+      <p id="quiz-error" class="field-error" hidden></p>
+      <div class="quiz-nav">
+        <button id="back-button" class="button-secondary" type="button" hidden>&larr; Back</button>
+        <button id="next-button" class="button-primary" type="button" disabled>Next</button>
+      </div>
+      <div class="progress-track"><div id="progress-fill" class="progress-fill"></div></div>
+    </section>
+
+    <section id="screen-results" class="screen" hidden>
+      <h1 id="results-overall-headline"></h1>
+      <p id="results-overall-body"></p>
+      <div class="score-card">
+        <p class="score-label">YOUR OVERALL SCORE</p>
+        <p id="results-overall-score" class="score-value"></p>
+        <p id="results-overall-band" class="score-band"></p>
+      </div>
+      <div id="results-categories" class="results-categories"></div>
+      <div class="cta-card">
+        <div class="cta-inner">
+          <div class="cta-text">
+            <h2 id="cta-heading"></h2>
+            <p id="cta-subheading" class="cta-subheading"></p>
+            <p id="cta-body"></p>
+            <a id="cta-button" class="button-primary button-cta" href="#"></a>
+          </div>
+          <img id="cta-image" class="cta-image" alt="" />
+        </div>
+      </div>
+      <footer class="results-footer">
+        <img id="footer-logo" class="footer-logo" alt="" />
+        <p id="about-text" class="about-text"></p>
+      </footer>
+    </section>
+  </main>
+
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>
