@@ -124,10 +124,7 @@ function renderQuestion() {
       document.getElementById('next-button').disabled = false;
     });
 
-    const valueText = document.createElement('span');
-    valueText.textContent = String(value);
-
-    wrapper.append(labelText, input, valueText);
+    wrapper.append(labelText, input);
     optionsContainer.append(wrapper);
   });
 
