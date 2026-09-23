@@ -13,8 +13,9 @@ export function computeScores(answers, config) {
     ) {
       throw new Error(`Invalid or missing answer for question "${question.id}": ${answer}`);
     }
+    // Answers are 1-5 but scored 0-4, so Strongly Disagree is a true 0%.
     const totals = categoryTotals.get(question.categoryId);
-    totals.sum += answer;
+    totals.sum += answer - 1;
     totals.count += 1;
   }
 
@@ -23,7 +24,7 @@ export function computeScores(answers, config) {
 
   for (const category of config.categories) {
     const totals = categoryTotals.get(category.id);
-    const score = Math.round((totals.sum / totals.count / 5) * 100);
+    const score = Math.round((totals.sum / totals.count / 4) * 100);
     categoryScores[category.id] = { score, band: bandFor(score, config.bands) };
     categoryScoreSum += score;
   }

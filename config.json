@@ -75,8 +75,8 @@
     },
     {
       "id": "q2",
-      "categoryId": "hiring",
-      "text": "Our recruitment processes are accessible and inclusive for people of all backgrounds, including those from historically marginalised groups."
+      "categoryId": "training",
+      "text": "People involved in hiring at our organisation have been trained in inclusive recruitment practices, such as inclusive interviewing and candidate adjustments."
     },
     {
       "id": "q3",
@@ -113,16 +113,16 @@
     {
       "id": "low",
       "minScore": 0,
-      "maxScore": 44
+      "maxScore": 39
     },
     {
       "id": "medium",
-      "minScore": 45,
-      "maxScore": 74
+      "minScore": 40,
+      "maxScore": 69
     },
     {
       "id": "high",
-      "minScore": 75,
+      "minScore": 70,
       "maxScore": 100
     }
   ],
